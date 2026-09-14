@@ -9,4 +9,16 @@ int liczbaWylosowana2 = random.Next( 50);
 //przeciążenie metody Next
 //przeciążenie metody -> ta sama nazwa, różna liczba lub typ parametry
 Console.WriteLine(liczbaWylosowana);
+
+Console.WriteLine("podaj liczbę");
+int liczbaWpisywana = int.Parse(Console.ReadLine());
+//konwersja string na int
+if(liczbaWpisywana == liczbaWylosowana)
+{
+    Console.WriteLine("Trafione");
+}
+else
+{
+    Console.WriteLine("Spróbuj jeszcze raz");
+}
 Console.ReadLine();
