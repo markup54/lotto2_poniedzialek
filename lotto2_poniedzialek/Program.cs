@@ -21,4 +21,25 @@ else
 {
     Console.WriteLine("Spróbuj jeszcze raz");
 }
+
+Console.WriteLine("zgadywanie 10 razy");
+for(int i = 0; i < 10; i++)
+{
+    Console.WriteLine("Podaj " + i + " liczbę");
+    liczbaWpisywana = int.Parse(Console.ReadLine());
+    if(liczbaWylosowana == liczbaWpisywana)
+    {
+        Console.WriteLine("Udało się");
+        break;
+    }
+    if (liczbaWpisywana > liczbaWylosowana)
+    {
+        Console.WriteLine("wpisano za dużo");
+    }
+    else
+    {
+        Console.WriteLine("wpisano za mało");
+    }
+}
+
 Console.ReadLine();
