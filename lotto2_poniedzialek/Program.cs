@@ -41,5 +41,21 @@ for(int i = 0; i < 10; i++)
         Console.WriteLine("wpisano za mało");
     }
 }
+Console.WriteLine("Zgadywanie tak długo aż zgadniesz:");
+liczbaWpisywana = -5;
+while(liczbaWpisywana != liczbaWylosowana)
+{
+    Console.WriteLine("Podaj liczbę ");
+    liczbaWpisywana = int.Parse(Console.ReadLine());
+    if (liczbaWpisywana > liczbaWylosowana)
+    {
+        Console.WriteLine("wpisano za dużo");
+    }
+    else
+    {
+        Console.WriteLine("wpisano za mało");
+    }
+}
+Console.WriteLine("Brawo udało się");
 
 Console.ReadLine();
